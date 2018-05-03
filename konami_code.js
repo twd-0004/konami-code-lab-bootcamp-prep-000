@@ -7,9 +7,10 @@ function init() {
   body.addEventListener('keydown',onKeyDownHandler(e))
   function onKeyDownHandler(e) {
     const key = parseInt(e.detail || e.which);
-
+    console.log(e)
     if (key === cdoe[index]) {
     index++;
+    console.log(e)
 
       if (index === code.length) {
         alert("Hurray!");
