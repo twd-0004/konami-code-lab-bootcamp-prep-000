@@ -5,8 +5,7 @@ function init() {
   let index = 0;
   const body = document.getElementsByTagName('body')
   console.log(body)
-  body.addEventListener('keydown',onKeyDownHandler(e))
-  function onKeyDownHandler(e) {
+  body.addEventListener('keydown',function onKeyDownHandler(e) {
     const key = parseInt(e.detail || e.which);
     console.log(e)
     if (key === code[index]) {
@@ -20,6 +19,20 @@ function init() {
       }
     } else {
       index = 0;
+    }const key = parseInt(e.detail || e.which);
+    console.log(e)
+    if (key === code[index]) {
+    index++;
+    console.log(e)
+
+      if (index === code.length) {
+        alert("Hurray!");
+
+        index = 0;
+      }
+    } else {
+      index = 0;
     }
-    }
+  })
+    
 }
