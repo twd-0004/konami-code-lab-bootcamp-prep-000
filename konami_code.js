@@ -19,19 +19,6 @@ function init() {
       }
     } else {
       index = 0;
-    }const key = parseInt(e.detail || e.which);
-    console.log(e)
-    if (key === code[index]) {
-    index++;
-    console.log(e)
-
-      if (index === code.length) {
-        alert("Hurray!");
-
-        index = 0;
-      }
-    } else {
-      index = 0;
     }
   })
 
